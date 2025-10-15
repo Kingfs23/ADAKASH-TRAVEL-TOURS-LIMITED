@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adakash Travel Tours LTD </title>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+    
+      <nav>
+        <div class="logo">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT US</a>
+
+        </div>
+      </nav>
+      
+        <div class="banner">WELCOME TO ADAKASH TRAVEL & TOURS LTD</div>
+        <div class="services">
+        <h2>SERVICES</h2></div>
+        <ul>
+            <li onclick="location.href='booking.html'"><span>✈</span>Ticket & Flight Booking</li>
+            <li onclick="location.href='hotel.html'"><span>🏣</span>Hotel Reservation World Wide </li>
+            <li onclick="location.href='consultation.html'"><span>🗺</span>Consultation</li>
+            <li><span>🌍</span>USA & Shengen Online</li>
+            <li><span>📝</span>ApplicationForms & Appointment Booking</li>
+        </ul>
+        <button class="btn">Learn More</button>
+        </div>
+        <script>
+            const listitems = document.querySelectorAll('ul li');
+            window.addEventListener('scroll',() => {
+                listitems.forEach(item => {
+                    const itemTop = item.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight
+                    if (itemTop < windowHeight - 50) {
+                        item.classList.add('show');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

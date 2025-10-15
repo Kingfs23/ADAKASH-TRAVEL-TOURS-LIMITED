@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1"/>
+        <title>Hotel Reservation - Adakash Travel</title>
+        <link rel="stylesheet" href="sharedstyle.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <div class="brand">Adakash Travel & Tours LTD</div>
+                <nav>
+                    <a href="hotel.html">Hotels</a>
+                    <a href="consultation.html">Consultation</a>
+                    <a href="visa.html">Applications</a>
+                    <a class="btn ghost" href="Html structure.html">Home</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="card">
+                <h1>Hotel Reservation Worldwide</h1>
+                <p class="lead">Business trips, vacations, group tours - we secure the <b>right room at the right place</b> with instant confrimations and 24/7 support</p>
+                
+                <div class="grid" style="margin-top: 16px">
+                    <div class="card">
+                        <h2>why book with us?</h2>
+                        <ul class="features">
+                            <li>Global inventory: Luxury to budget</li>
+                            <li>FLexible cancellation options</li>
+                            <li>Group & corporate rates </li>
+                            <li>Real-time confrimations</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>Quick Hotel Search</h2>
+                        <form class="form needs-js">
+                            <div class="row">
+                                <input class="input" type="text" name="city" placeholder="Destination city" required/>
+                                <input class="input" type="number" min="1" name="guests" placeholder="Guests" required/>
+                            </div>
+                            <div class="row">
+                                <input class="input" type="date" name="checkin" required/>
+                                <input class="input" type="date" name="checkout" required/>
+                            </div>
+                            <select name="room" class="input">
+                                <option>Standard Room</option>
+                                <option>Deluxe Room </option>
+                                <option>Suite</option>
+                                <option>Apartment</option>
+                            </select>
+                            <button class="btn" type="submit">Check Availability</button>
+                            <div class="help">We'll email you curated options within minutes.</div>
+                        </form>
+                    </div>
+                </div>
+                <div class="accordion" style="margin-top: 18px;">
+                    <details open>
+                        <summary>How Payments work</summary>
+                        <div class="content">We accept bank transfer, card payments and pay-on-arrival Where available. All prices include taxes unless stated.</div>
+                    </details>
+                </div>
+            </section>
+        </main>
+        <footer><span id="y"></span> Adakash Travel & Tours LTD</footer>
+        <div class="toast" aria-live="polite"></div>
+        <script src="sharedf.js"></script>
+        <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+    </body>
+</html>

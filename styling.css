@@ -1,0 +1,118 @@
+
+nav{
+    background: linear-gradient(90dg, #00c6ff);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    background-attachment: fixed;
+    color: #333;
+}
+nav a{
+    color:#00c6ff ;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: blue;
+}
+
+.banner {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(270deg, #00f260, #0575e6);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+@keyframes gradientMove{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.services{
+    padding: 2rem;
+}
+.services h2{
+    text-align: center;
+    color: #0072ff;
+}
+ul{
+max-width: 600px;
+margin: auto;
+padding: 0;
+list-style: none;
+}
+ul li{
+    padding: 15px 20px;
+    background: white;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+ul li:nth-child(even){
+    background: #e6f7ff;
+}
+ul li:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+ul li span{
+    font-size: 1.3rem;
+}
+.btn {
+    display: block;
+    width: max-content;
+    margin: 2rem auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: 1rem;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px){
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+    .banner {
+        font-size: 1.4rem;
+    }
+}
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: all 0.8s ease;
+}
